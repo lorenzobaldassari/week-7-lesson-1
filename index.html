@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 7 lesson 1</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body style="background-color: rgba(148, 145, 145, 0.74)">
+    <div style="width: 60%; margin: 1em auto 1em auto">
+      <h1 style="font-size: 3em; margin-top: 50px; color: rgb(143, 34, 153)">
+        Open the console to check the relusts
+      </h1>
+      <div>
+        <div style="display: flex; flex-direction: column; align-items: start">
+          <form
+            onsubmit="createList(event)"
+            id="validity"
+            action=""
+            style="display: flex; flex-direction: column"
+          >
+            <label for="petName">Pet Name</label>
+            <input type="text" name="petName" id="petName" required />
+            <label for="petOwner">Pet Owner</label>
+            <input type="text" name="petOwner" id="petOwner" required />
+            <label for="species">Species</label>
+            <select name="species" id="species" required>
+              <option value="" disabled selected>Select the breed</option>
+              <option value="cat">Cat</option>
+              <option value="dave">Dog</option>
+              <option value="pumpernickel">Hamster</option>
+              <option value="reeses">guinea pig</option>
+              <option value="reeses">Horse</option>
+              <option value="reeses">Fish</option>
+              <option id="kk" value="reeses">Turtles</option>
+              <option value="reeses">Birds</option>
+            </select>
+            <!-- <input type="text" name="species" id="species" required /> -->
+            <label for="breed">breed</label>
+            <input type="text" name="breed" id="breed" required />
+            <button type="submit" style="margin-top: 2em">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+      <div
+        id="lists"
+        style="
+          font-size: 1.5em;
+          display: flex;
+          justify-content: start;
+          align-items: start;
+        "
+      ></div>
+   
+    <script src="script/script.js"></script>
+  </body>
+</html>
